@@ -1,18 +1,5 @@
-# Point-GNN
+# Point-KGNN
 
-This repository is the pytorch-version reimplementation of  [Point-GNN: Graph Neural Network for 3D Object Detection in a Point Cloud](http://openaccess.thecvf.com/content_CVPR_2020/papers/Shi_Point-GNN_Graph_Neural_Network_for_3D_Object_Detection_in_a_CVPR_2020_paper.pdf), CVPR 2020. 
-It is based on original CVPR paper and their [tensorflow-version codes](https://github.com/WeijingShi/Point-GNN/)
-
-Thanks owe to authors. If you find this code useful in your research, please consider citing their work:
-```
-@InProceedings{Point-GNN,
-author = {Shi, Weijing and Rajkumar, Ragunathan (Raj)},
-title = {Point-GNN: Graph Neural Network for 3D Object Detection in a Point Cloud},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2020}
-}
-```
 
 ## Getting Started
 
@@ -61,16 +48,21 @@ We use the KITTI 3D Object Detection dataset. Please download the dataset from t
         ├── train_car.txt
         └── ...
 
-### Download Point-GNN
+### Download Point-KGNN
 
-Clone the repository recursively:
-```
-git clone https://github.com/Shudeng/Point-GNN.pytorch --recursive
-```
 
 ### Training
 ```
 bash train.sh
+
+pip install https://data.pyg.org/whl/torch-2.0.0%2Bcu118/torch_scatter-2.1.1%2Bpt20cu118-cp39-cp39-linux-x86_64.whl
+
+pip install https://data.dgl.ai/wheels/cu118/dgl-1.1.2%2Bcu118-cp39-cp39-linux-x86_64.whl
+
+cd E:\Point-GNN.pytorch-master
+
+python mytrain.py configs/car_auto_T3_train_train_config configs/car_auto_T3_train_config --dataset_root_dir E:\Point-GNN.pytorch-master\dataset\kitti
+
 ```
 
 
