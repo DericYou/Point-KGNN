@@ -59,16 +59,12 @@ pip install https://data.pyg.org/whl/torch-2.0.0%2Bcu118/torch_scatter-2.1.1%2Bp
 
 pip install https://data.dgl.ai/wheels/cu118/dgl-1.1.2%2Bcu118-cp39-cp39-linux-x86_64.whl
 
-cd E:\Point-GNN.pytorch-master
+cd "file path"
 
-python mytrain.py configs/car_auto_T3_train_train_config configs/car_auto_T3_train_config --dataset_root_dir E:\Point-GNN.pytorch-master\dataset\kitti
-
+python mytrain.py configs/car_auto_T3_train_train_config configs/car_auto_T3_train_config --dataset_root_dir “file path”
 ```
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
 
