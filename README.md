@@ -1,6 +1,6 @@
 # Point-KGNN
 The code of module Point-KGNN
-# Point-KGNN
+
 
 
 ## Getting Started
